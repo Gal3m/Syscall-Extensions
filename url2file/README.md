@@ -21,14 +21,23 @@ Test Cases tried:
 I have tested my url2file tool with a lot of URLs, and it worked perfectly. But if it doese not work with specefic URL, please check it with another one. 
 
 ./url2file wc https://www.cs.stonybrook.edu
+
 ./url2file vim https://www.cs.stonybrook.edu
+
 ./url2file vi https://www.cs.stonybrook.edu
+
 ./url2file ls https://www.cs.stonybrook.edu
+
 ./url2file cat https://www.cs.stonybrook.edu
+
 ./url2file head https://www.cs.stonybrook.edu
+
 ./url2file tail https://www.cs.stonybrook.edu
+
 ./url2file head -30 https://www.cs.stonybrook.edu | grep stonybrook
+
 ./url2file tail -10 https://www.cs.stonybrook.edu | grep twitter
+
 
 
 /* gedit has a special functionality to download URLs. So to show my url2file successfully inject to the child process I used the below test case. url2file copy the input file to a new path with new random name and inject to the gedit child thread to open the copied file.*/
